@@ -1,0 +1,36 @@
+
+.commited-to-success-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gradient {
+    background-image: linear-gradient(to right, #0A111B, #132A38);
+    padding: 86px 0px;
+}
+
+.commited-to-success-text {
+    display: flex;
+    max-width: 477px;
+    flex-direction: column;
+    gap:    29px;
+}
+
+.commited-to-success-text h1 {
+    font-size: var(--heading-font);
+    color: var(--color-heading-light);
+}
+.commited-to-success-text p {
+    color: var(--color-body-light);
+}
+
+.mayra-picture {
+    background-image: url("../assets/mayra.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+
+    height: 550px;
+    width: 500px;
+}

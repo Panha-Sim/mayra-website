@@ -1,0 +1,20 @@
+
+
+nav {
+    padding-top:    21px;
+    color: var(--color-heading-light);
+}
+
+nav h1 {
+    font-size: 40px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+nav ul li{
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+}

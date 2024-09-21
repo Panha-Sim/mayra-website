@@ -1,0 +1,31 @@
+.custom-primary-button {
+    cursor: pointer;
+    width: fit-content;
+    background-color: transparent;
+    border: 1px solid var(--color-heading-light);
+    color: var(--color-heading-light);
+    padding: 7px 23px;
+    font-size: var(--body-font);
+    transition: ease-in-out .3s;
+}
+.custom-primary-button:hover{
+    background-color: var(--color-heading-light);
+    color: var(--color-heading-dark);
+}
+
+.custom-secondary-button {
+    box-sizing: border-box;
+    cursor: pointer;
+    width: fit-content;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid var(--color-heading-light);
+    color: var(--color-heading-light);
+    padding: 7px 0px;
+    font-size: var(--body-font);
+    transition: ease-in-out .3s;
+}
+.custom-secondary-button:hover{
+    color: color-mix(in srgb, var(--color-heading-light) 80%, #000 20%);
+    border-bottom:  1px solid color-mix(in srgb, var(--color-heading-light) 80%, #000 20%);;
+}
