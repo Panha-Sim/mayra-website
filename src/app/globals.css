@@ -21,6 +21,22 @@
   font-style:   normal;
 }
 
+.text-body-dark {
+  color: var(--color-body-dark);
+}
+
+.text-heading-dark {
+  color: var(--color-heading-dark)
+}
+
+.text-body-light {
+  color: var(--color-body-light);
+}
+
+.text-heading-light {
+  color: var(--color-heading-light)
+}
+
 h1, h2,h3,h4,h5,h6, p{
   margin:0;
 }

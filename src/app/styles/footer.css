@@ -1,0 +1,18 @@
+.footer-container{
+    /* display: flex; */
+    padding: 44px 0px;
+}
+.SVGsize {
+    width: 70px;
+    height: 70px;
+}
+
+.word-block h3 {
+    font-size: 24px
+}
+
+@media screen and (max-width: 576px)  {
+    .first-word-block {
+        margin-bottom: 2rem !important;
+    }
+}
