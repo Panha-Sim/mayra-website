@@ -4,7 +4,7 @@ import Button from "./Button"
 export default function Hero() {
     return(
         <>
-            <div className="container-xxl">
+            <div className="container">
                 <div className="hero">
 
                     <h1>Where Your Home Journey Begins</h1>

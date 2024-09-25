@@ -13,13 +13,14 @@
 .professional-services-container{
     margin: 87px 0px;
     display: flex;
-    gap: 44px;
+    gap: 55px;
     flex-direction: column;
     align-items: center;
 }
 
 .professional-services-header {
     max-width: 560px; 
+    margin: 0 40px;
     text-align: center;
 }
 
@@ -46,7 +47,7 @@
     gap: 29px;
     text-align: center;
     padding: 20px;
-    max-width: 316px;
+    max-width: 350px;
 }
 
 .table-container h1 {
@@ -56,4 +57,21 @@
 
 .table-container p {
     color: var(--color-body-dark)
+}
+
+@media screen and (max-width: 768px){
+    .professional-services-table {
+        flex-direction: column;
+    }
+    .table-container:first-child{
+        border-right: none;
+        border-top: 1px solid #6A7380;
+        border-bottom: 1px solid #6A7380;
+    }
+    
+    .table-container:last-child{
+        border-left: none;
+        border-top: 1px solid #6A7380;
+        border-bottom: 1px solid #6A7380;
+    }
 }
