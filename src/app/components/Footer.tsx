@@ -7,13 +7,13 @@ import EqualHousingOpportunity from "../assets/Equal Housing Opportunity.svg"
 export default function Footer(){
     return(
         <> 
-        <div className="container">
+        <section className="container">
             <div className="footer-container">
                 <Image
                 className="row mb-5"
                 priority
                 src={WestUSA}
-                alt="Follow us on Twitter"
+                alt="West USA LOGO"
                 />
 
                 <div className="row mb-5 footer-info">
@@ -34,13 +34,13 @@ export default function Footer(){
                     className="col-1 SVGsize"
                     priority
                     src={EqualHousingOpportunity}
-                    alt="Follow us on Twitter"
+                    alt="Office of Fair Housing and Equal Opportunity"
                     />
                     <Image
                     className="col-1 SVGsize"
                     priority
                     src={MLS}
-                    alt="Follow us on Twitter"
+                    alt="Multiple Listing Service (MLS)"
                     />
                 </div>
 
@@ -48,7 +48,7 @@ export default function Footer(){
 
             </div>
 
-        </div>
+        </section>
         </>
     )
 }

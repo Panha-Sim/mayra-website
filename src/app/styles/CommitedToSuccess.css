@@ -36,8 +36,8 @@
     width: 500px;
 }
 
-/* @media screen and (max-width: 1052px) {
+@media screen and (max-width: 1052px) {
     .commited-to-success-text {
-        width: 100vw;
+        margin-bottom: 55px;
     }
-} */
+}
