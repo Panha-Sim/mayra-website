@@ -4,16 +4,21 @@
 import "../styles/nav.css"
 import Button from "./Button";
 import Image from 'next/image';
-import Hamburger from "../assets/Hamburger.svg"
+import HamburgerSVG from "../assets/Hamburger.svg"
 import { useState } from "react";
 import Link from 'next/link'
+import Hamburger from 'hamburger-react'
+
 
 export default function Nav(){
     const [isToggle, setToggle] = useState(false);
-
     const toggleHamburger = () => {
         setToggle(!isToggle);
-        console.log(isToggle);
+        if(!isToggle){
+            document.documentElement.style.setProperty('--allow-scroll', 'hidden');
+        } else {
+            document.documentElement.style.setProperty('--allow-scroll', 'auto');
+        }
     }
 
     return(
@@ -33,31 +38,27 @@ export default function Nav(){
                     </li>
                 </ul>
 
-                <ul className="hamburger">
-                    <Image
-                    onClick={toggleHamburger}
-                    className="hamburger-icon row"
-                    priority
-                    src={Hamburger}
-                    alt="Open navigation menu"
+                <ul className="hamburger hamburger-icon">
+                    <Hamburger
+                    onToggle={toggleHamburger}
+                    size={24}
+                    toggled={isToggle}
                     />
                 </ul>
 
-                {isToggle && (
-                    <div className="nav-popup">
-                        <ul className="popup-list">
-                            <li role="none">
-                                <Link href="/" role="menuitem">HOME</Link>
-                            </li>
-                            <li role="none">
-                                <Link href="/about" role="menuitem">ABOUT</Link>
-                            </li>
-                            <li role="none">
-                                <Link href="/contact" role="menuitem">LET'S CONNECT</Link>
-                            </li>
-                        </ul>
-                    </div>
-                )}
+                <nav className={`nav-popup ${isToggle?"active":""}`}>
+                    <ul className="popup-list">
+                        <li role="none">
+                            <Link href="/" role="menuitem">HOME</Link>
+                        </li>
+                        <li role="none">
+                            <Link href="/about" role="menuitem">ABOUT</Link>
+                        </li>
+                        <li role="none">
+                            <Link href="/contact" role="menuitem">LET'S CONNECT</Link>
+                        </li>
+                    </ul>
+                </nav>
 
             </nav>
         </>

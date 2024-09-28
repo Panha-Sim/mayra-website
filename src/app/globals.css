@@ -13,6 +13,8 @@
 
   --color-heading-dark:  #0D141E;
   --color-body-dark:     #6A7380;
+
+  --allow-scroll: auto;
 }
 
 * {

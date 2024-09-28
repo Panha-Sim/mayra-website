@@ -1,10 +1,14 @@
-import type { Metadata } from "next";
 // import localFont from "next/font/local";
 import "./globals.css";
-// import "./styles/bootstrap-grid.rtl.min.css"
 import 'bootstrap/dist/css/bootstrap.css';
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: 'Mayra Messer Hero Section',
+    description: 'Expert Real Estate Guidance in Phoenix—Bilingual Support, Local Insight, and a Personal Touch to Every Journey', 
+    keywords: 'Phoenix real estate, buy home in Phoenix, real estate guidance, bilingual real estate, local real estate insight',
+}
+
 
 export default function RootLayout({
   children,

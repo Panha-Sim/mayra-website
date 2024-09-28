@@ -6,7 +6,7 @@ export default function CommitedToSuccess(){
         <>
         <section className="gradient">
             <div className="container">
-                <div className="row justify-content-between">
+                <div className="row justify-content-between commited-to-success-container">
                     <div className="col-lg-12 col-xl-6 d-flex flex-column justify-content-center commited-to-success-text">
                         <h1>COMMITED TO YOUR SUCCESS</h1>
                         <p>I am dedicated to providing exceptional professionalism and expertise in guiding you through your real estate journey. My commitment is to support you in achieving your broader life goals with precision and care. Whether navigating the complexities of buying, selling, or relocating, my focus is on delivering a sophisticated and seamless experience tailored to your unique needs and aspirations.</p>

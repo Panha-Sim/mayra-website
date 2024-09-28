@@ -1,11 +1,4 @@
 
-.commited-to-success-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .gradient {
     background-image: linear-gradient(to right, #0A111B, #132A38);
     padding: 86px 0px;
@@ -36,8 +29,21 @@
     width: 500px;
 }
 
-@media screen and (max-width: 1052px) {
+@media screen and (max-width: 800px) {
     .commited-to-success-text {
         margin-bottom: 55px;
+    }
+    .commited-to-success-container {
+        margin-left: 80px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .commited-to-success-text {
+        margin-bottom: 55px;
+    }
+    .commited-to-success-container {
+        /* reseting the margin-left back to bootstrap default */
+        margin-left: calc(-0.5 * var(--bs-gutter-x))
     }
 }
