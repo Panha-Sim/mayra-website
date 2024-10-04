@@ -2,7 +2,7 @@ import "../styles/CommitedToSuccess.css"
 import Image from 'next/image';
 import MayraPortrait from "../assets/mayra.png"
 
-import Button from "./Button"
+import Button from "../controls/Button"
 
 export default function CommitedToSuccess(){
     return(

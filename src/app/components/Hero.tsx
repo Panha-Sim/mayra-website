@@ -1,5 +1,5 @@
 import "../styles/hero.css"
-import Button from "./Button"
+import Button from "../controls/Button"
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {

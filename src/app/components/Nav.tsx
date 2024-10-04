@@ -2,7 +2,7 @@
 "use client"
 
 import "../styles/nav.css"
-import Button from "./Button";
+import Button from "../controls/Button";
 import Image from 'next/image';
 import HamburgerSVG from "../assets/Hamburger.svg"
 import { useState } from "react";
