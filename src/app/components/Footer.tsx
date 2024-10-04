@@ -23,7 +23,7 @@ export default function Footer(){
                         <p className="text-body-dark">maymesser@gmail.com</p>
                     </div>
                     <div className="col-sm-6 col-xl-3 word-block ">
-                        <h3 className="text-heading-dark mb-2">MAYRA MESSER</h3>
+                        <h3 className="text-heading-dark mb-2">OFFICE LOCATION</h3>
                         <p className="text-body-dark">2920 N. Litchfield Road, Suite #100 Goodyear, AZ 85395</p>
                     </div>
                 </div>
