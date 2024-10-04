@@ -5,10 +5,10 @@
 }
 
 .commited-to-success-text {
-    /* display: flex; */
+    display: flex;
     max-width: 477px;
     flex-direction: column;
-    gap:    29px;
+    gap:    18px;
 }
 
 .commited-to-success-text h1 {
@@ -20,30 +20,35 @@
 }
 
 .mayra-picture {
-    background-image: url("../assets/mayra.png");
+    /* background-image: url("../assets/mayra.png"); */
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
+    width: 100vw;
+    height: auto;
 
-    height: 550px;  
-    width: 500px;
+}
+.commited-to-success-container {
+    align-items: center;
+    margin-bottom: 54px;
+} 
+.mayra-portrait-container {
+    display: flex;
+    justify-content: center;
 }
 
-@media screen and (max-width: 800px) {
-    .commited-to-success-text {
-        margin-bottom: 55px;
-    }
-    .commited-to-success-container {
-        margin-left: 80px;
+@media screen and (min-width: 768px){
+   .commited-to-success-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    } 
+    .mayra-picture {
+        height: 550px;  
+        width: 500px;
     }
 }
 
-@media screen and (max-width: 500px) {
-    .commited-to-success-text {
-        margin-bottom: 55px;
-    }
-    .commited-to-success-container {
-        /* reseting the margin-left back to bootstrap default */
-        margin-left: calc(-0.5 * var(--bs-gutter-x))
-    }
+@media screen and (min-width: 992px){
+    
 }
