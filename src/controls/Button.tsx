@@ -1,4 +1,4 @@
-import "../styles/button.css"
+import "@/styles/button.css"
 import Link from 'next/link'
 
 export default function Button(props:any){

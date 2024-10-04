@@ -1,0 +1,55 @@
+.gradient-about {
+    background-image: linear-gradient(to right, #0A111B, #132A38);
+}
+.find-perfect-home-container {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.find-perfect-home-text {
+    max-width: 440px;
+}
+
+.find-perfect-home-text h1 {
+    color: var(--color-heading-light);
+}
+.find-perfect-home-text p {
+    color: var(--color-body-light);
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+.maryraPortrait {
+    width: 450px;
+    height: auto;
+}
+
+@media screen and (min-width: 768px){
+    .find-perfect-home-text {
+        max-width: 500px; 
+    }
+    .find-perfect-home-container {
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .maryraPortrait {
+        width: 500px; 
+        margin-bottom: 60px;
+    }
+
+}
+@media screen and (min-width: 992px){
+    .find-perfect-home-container {
+        justify-content: flex-start;
+        margin-bottom: 0px;
+    }
+    .image-container {
+        justify-content: center;   
+        margin-bottom: 60px;
+
+    }
+}

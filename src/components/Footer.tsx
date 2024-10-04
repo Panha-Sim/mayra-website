@@ -1,8 +1,8 @@
-import "../styles/footer.css"
+import "@/styles/footer.css"
 import Image from 'next/image';
-import WestUSA from "../assets/WestUSA.svg"
-import MLS from "../assets/MLS.svg"
-import EqualHousingOpportunity from "../assets/Equal Housing Opportunity.svg"
+import WestUSA from "@/assets/WestUSA.svg"
+import MLS from "@/assets/MLS.svg"
+import EqualHousingOpportunity from "@/assets/Equal Housing Opportunity.svg"
 
 export default function Footer(){
     return(

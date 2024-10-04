@@ -1,4 +1,4 @@
-import "../styles/ProfessionalServices.css"
+import "@/styles/ProfessionalServices.css"
 
 export default function ProfessionalServices() {
     return(

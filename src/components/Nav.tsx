@@ -1,10 +1,8 @@
 
 "use client"
 
-import "../styles/nav.css"
-import Button from "../controls/Button";
-import Image from 'next/image';
-import HamburgerSVG from "../assets/Hamburger.svg"
+import "@/styles/nav.css"
+import Button from "@/controls/Button";
 import { useState } from "react";
 import Link from 'next/link'
 import Hamburger from 'hamburger-react'
@@ -24,7 +22,7 @@ export default function Nav(){
     return(
         <>
             <nav className="container d-flex justify-content-between">
-                <h1>Mayra</h1>
+                <Link href="/" role="menuitem"><h1>Mayra</h1></Link>
 
                 <ul className="list">
                     <li role="none">

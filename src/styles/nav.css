@@ -28,6 +28,10 @@ nav .hamburger {
     display: none;
 }
 
+nav > h1 {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 500px) {
     nav .list {
         display: none;
