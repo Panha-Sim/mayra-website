@@ -4,9 +4,9 @@ import 'bootstrap/dist/css/bootstrap.css';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-    title: 'Mayra Messer Hero Section',
-    description: 'Expert Real Estate Guidance in Phoenix—Bilingual Support, Local Insight, and a Personal Touch to Every Journey', 
-    keywords: 'Phoenix real estate, buy home in Phoenix, real estate guidance, bilingual real estate, local real estate insight',
+  title: 'Expert Real Estate Guidance in Phoenix & Goodyear | Mayra Messer',
+  description: 'Expert Real Estate Guidance in Phoenix and Goodyear—Bilingual Support, Home Buying and Selling, with Local Insight and a Personal Touch in Every Real Estate Journey.',
+  keywords: 'Phoenix real estate, Goodyear real estate, home buying Phoenix, home buying Goodyear, bilingual real estate agent, local Phoenix real estate guidance, local Goodyear real estate guidance',
 }
 
 
