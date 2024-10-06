@@ -4,6 +4,7 @@ import Nav from "@/components/Nav"
 import Footer from "@/components/Footer"
 import FindingPerfectHome from "@/components/FindingPerfectHome"
 import ValueAndPhilosophy from "@/components/ValueAndPhilosophy"
+import LetsWorkTogether from "@/components/LetsWorkTogether"
 
 export default function Home(){
     return (
@@ -13,6 +14,7 @@ export default function Home(){
                 <FindingPerfectHome/>
             </div>
             <ValueAndPhilosophy/>
+            <LetsWorkTogether/>
             <Footer/>
         </>
     )

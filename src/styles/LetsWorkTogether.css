@@ -1,0 +1,28 @@
+.lets-work-together-container {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.work-together-text {
+    display: flex;
+    flex-direction: column;
+    gap:21px;
+    max-width: 900px;
+}
+.work-together-text h1 {
+    font-size: var(--heading-font);
+    color: var(--color-heading-light)
+}
+.work-together-text p {
+    font-size: var(--heading-body);
+    color: var(--color-body-light)
+}
+
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 992px){
+    .lets-work-together-container {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+}
