@@ -1,3 +1,5 @@
+
+import "@/styles/FindingPerfectHome.css"
 import Button from "@/controls/Button";
 import Image from "next/image";
 import MayraPortrait from "@/assets/MayraPortrait2.png"
