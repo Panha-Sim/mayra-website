@@ -1,0 +1,77 @@
+.values-philosophy-text {
+    display: flex;
+    flex-direction: column;
+    /* gap: 49px; */
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 44px;
+}
+.values-philosophy-text h1 {
+    font-size: var(--heading-font);
+    color: var(--color-heading-dark)
+}
+.values-philosophy-text p {
+    font-size: var(--heading-body);
+    color: var(--color-body-dark)
+}
+
+.value-and-philosophy-container {
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+.tenacity-honesty-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:44px;
+}
+.tenacity-honesty-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid var(--color-body-dark);
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 300px;
+    height: 330px;
+}
+.tenacity-honesty-card h1{
+    margin-bottom: 22px !important;
+    font-size: var(--heading-font);
+    color: var(--color-heading-dark)
+}
+.tenacity-honesty-card p{
+    font-size: var(--heading-body);
+    color: var(--color-body-dark)
+}
+
+@media screen and (min-width: 768px) {
+    .values-philosophy-text {
+        gap: 21px;
+    }
+    .value-and-philosophy-container {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+    .tenacity-honesty-container {
+        flex-direction: row;
+        justify-content: center; 
+        gap: 60 px;
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .values-philosophy-text {
+        gap: 21px;
+    }
+    .value-and-philosophy-container {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+    .tenacity-honesty-container {
+        gap:128px;
+    }
+}
