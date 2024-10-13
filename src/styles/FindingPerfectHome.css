@@ -21,11 +21,12 @@
     display: flex;
     justify-content: center;
 }
+
 .maryraPortrait {
-    width: 450px;
-    height: auto;
+  display: none;
 }
 
+/* Ipad Vertical */
 @media screen and (min-width: 768px){
     .find-perfect-home-text {
         max-width: 500px; 
@@ -36,19 +37,34 @@
         margin-bottom: 60px;
     }
     .maryraPortrait {
+        display: block;
         width: 500px; 
+        height: auto;
         margin-bottom: 60px;
     }
 
 }
+
+/* Ipad Horizontal */
 @media screen and (min-width: 992px){
     .find-perfect-home-container {
-        justify-content: flex-start;
-        margin-bottom: 0px;
     }
     .image-container {
         justify-content: center;   
         margin-bottom: 60px;
+    }
+    
+    .maryraPortrait {
+        display: block;
+        width: 450px;
+        height: auto;
+    }
+}
 
+/* Laptop */
+@media screen and (min-width: 1200px) {
+    .find-perfect-home-container {
+        justify-content: flex-start;
+        margin-bottom: 0px;
     }
 }
