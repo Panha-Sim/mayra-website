@@ -1,0 +1,13 @@
+.search-bar-container {
+    margin: 100px;
+    display: flex;
+}
+
+.search-input {
+    width:250px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    outline: none;
+    padding-left: 15px;
+    border: 1px solid var(--color-body-dark);
+}
