@@ -1,7 +1,7 @@
 {
     "houses": [
         {
-            "image":"@/assets/House.png",
+            "image":"/10236 w patrick ln peopria.png",
             "price": "$736,500",
             "community": "Sunset Ranch Community",
             "address": "10236 W PATRICK LN PEORIA, AZ85383",

@@ -1,18 +1,12 @@
 
 import "@/styles/PropertyCard.css"
-import Image from "next/image"
 import EstateBade from "./EstateBadge"
 
 export default function PropertiesCard(props: any) {
     return (
         <div className="property-card">
             <div className="property-image-container">
-                <Image
-                src = {props.image}
-                height = {180}
-                className = "house-image"
-                alt = "house"
-                />
+                <img src={`${props.image}`} className="house-image" alt="house"/>
             </div>
 
             <div className="property-info">

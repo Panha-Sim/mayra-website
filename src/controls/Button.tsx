@@ -14,8 +14,8 @@ export default function Button(props:any){
     const arguementStyle = {
         "color": props.color,
         "border": props.border,
-        "background-color": props.bgColor,
-        "border-color": props.borderColor,
+        "backgroundColor": props.bgColor,
+        "borderColor": props.borderColor,
     }
     if (props.type == "secondary") {
         return (

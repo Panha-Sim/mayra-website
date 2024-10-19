@@ -5,9 +5,9 @@ import SearchBar from "@/controls/SearchBar"
 import Nav from "@/components/Nav"
 import PropertyCard from "@/components/PropertyCard"
 import houseList from "./HousingList.json";
+import Footer from "@/components/Footer"
 
 export default function PropertiesListing() {
-    // const house = require("@/assets/House.png")
     return (
         <>
         <section className="gradient-nav">
@@ -16,30 +16,26 @@ export default function PropertiesListing() {
         <section className="container nav-section">
             <SearchBar/>
         </section>
-        <section className="container property-card-container">
-            {
-                houseList.houses.map((house, kedddy) => {
-                    console.log(kedddy)
-                    return(
-                        <>
-                        <i key={kedddy}>
-                             <PropertyCard 
-                                // image={houseImage}
-                                price = {house.price}
-                                community = {house.community}
-                                address = {house.address}
-                                beds = {house.beds} 
-                                baths = {house.baths} 
-                                sqft = {house.sqft}/>
-                        </i>
-                        </>
-                    ) 
-                }
+        <section className="mb-5 container property-card-container">
+
+           {
+            houseList.houses.map((house, key) => {
+                return(
+                    <PropertyCard
+                    key = {key}
+                    image = {house.image}
+                    price = {house.price}
+                    community = {house.community}
+                    address = {house.address}
+                    beds = {house.beds} 
+                    baths = {house.baths} 
+                    sqft = {house.sqft}/>
                 )
-            }
-            
-           
+            })
+           }
+       
         </section>
+        <Footer/>
         </>
     )
 }
