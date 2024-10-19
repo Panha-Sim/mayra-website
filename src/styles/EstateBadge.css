@@ -1,0 +1,12 @@
+.estate-badge  {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    color: var(--color-heading-dark);
+    background-color: #F4F7FB;
+}
+
+.estate-badge p {
+    margin: 0 0;
+}
