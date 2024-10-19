@@ -4,9 +4,10 @@ import "@/styles/PropertiesListing.css"
 import SearchBar from "@/controls/SearchBar"
 import Nav from "@/components/Nav"
 import PropertyCard from "@/components/PropertyCard"
-import house from "@/assets/House.png"
+import houseList from "./HousingList.json";
 
 export default function PropertiesListing() {
+    // const house = require("@/assets/House.png")
     return (
         <>
         <section className="gradient-nav">
@@ -16,14 +17,28 @@ export default function PropertiesListing() {
             <SearchBar/>
         </section>
         <section className="container property-card-container">
-            <PropertyCard 
-            image={house}
-            price="$736,500"
-            community="Sunset Ranch Community"
-            address="10236 W PATRICK LN PEORIA, AZ85383"
-            beds="3" 
-            baths="3.5" 
-            sqft="2,145"/>
+            {
+                houseList.houses.map((house, kedddy) => {
+                    console.log(kedddy)
+                    return(
+                        <>
+                        <i key={kedddy}>
+                             <PropertyCard 
+                                // image={houseImage}
+                                price = {house.price}
+                                community = {house.community}
+                                address = {house.address}
+                                beds = {house.beds} 
+                                baths = {house.baths} 
+                                sqft = {house.sqft}/>
+                        </i>
+                        </>
+                    ) 
+                }
+                )
+            }
+            
+           
         </section>
         </>
     )
