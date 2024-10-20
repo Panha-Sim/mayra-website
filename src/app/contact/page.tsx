@@ -1,3 +1,6 @@
+
+'use client'
+
 import Nav from "@/components/Nav"
 import "@/styles/contact.css"
 import Image from "next/image"
@@ -6,8 +9,21 @@ import MLSIcon from "@/assets/MLS white.svg"
 import mapPin from "@/assets/map-pin 1.svg"
 import phoneIcon from "@/assets/phone 1.svg"
 import Button from "@/controls/Button"
+import { useEffect, useState } from "react"
 
 export default function Contact() {
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phoneNumber, setPhoneNumber] = useState("");
+    const [subject, setSubject] = useState("");
+    const [message, setMessage] = useState("");
+    
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+        // INSERT EMAIL LOGIC HERE
+    }
+
     return(
         <>
         <section className="gradient-nav">
@@ -62,41 +78,41 @@ export default function Contact() {
             </div>
 
             <div className="contact-form">
-                <form className="form">
+                <form onSubmit={handleSubmit} className="form">
                     <h1>Let's Connect</h1>
                     <div className="form-input">
                         <div className="row-input">
                             <div className="input-name d-flex flex-column">
                                 <label>FIRST NAME:</label>
-                                <input type="firstName" placeholder="First Name"></input>
+                                <input type="firstName" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)}></input>
                             </div>
                             <div className=" input-name d-flex flex-column">
                                 <label>LAST NAME:</label>
-                                <input type="lastName" placeholder="Last Name"></input>
+                                <input type="lastName" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)}></input>
                             </div>
                         </div>
                         
                         <div className="d-flex flex-column">
                             <label>EMAIL:</label>
-                            <input type="text" placeholder="you@email.com"></input>
+                            <input type="text" placeholder="you@email.com" value={email} onChange={e => setEmail(e.target.value)}></input>
                         </div>
 
                         <div className="d-flex flex-column">
                             <label>PHONE NUMBER:</label>
-                            <input type="number" placeholder="+1 (555) 000-0000"></input>
+                            <input type="number" placeholder="+1 (555) 000-0000" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}></input>
                         </div>
 
                         <div className="d-flex flex-column">
                             <label>SUBJECT:</label>
-                            <input type="text" placeholder="Subject"></input>
+                            <input type="text" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)}></input>
                         </div>
 
                         <div className="d-flex flex-column">
                             <label>Message:</label>
-                            <textarea className="message-input" placeholder="Leave me a message..."></textarea>
+                            <textarea className="message-input" placeholder="Leave me a message..." value={message} onChange={e => setMessage(e.target.value)}></textarea>
                         </div>
                     </div>
-                    <Button className="form-button" type="primary" bgColor="#132836" name="Send Message"/>
+                    <Button className="form-button" type="submit" bgColor="#132836" name="Send Message"/>
                 </form>
                 
             </div>

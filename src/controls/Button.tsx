@@ -23,10 +23,16 @@ export default function Button(props:any){
                 <Link href={`/${slug}`}>{name}</Link>
             </button>
         )
-    }else{
+    }else if(props.type == "primary"){
         return (
             <button style={arguementStyle} className={`${props.className} custom-primary-button`}>
                 <Link href={`/${slug}`}>{name}</Link>
+            </button>
+        )
+    } else {
+        return (
+            <button type="submit" style={arguementStyle} className={`${props.className} custom-primary-button`}>
+                {name}
             </button>
         )
     }
