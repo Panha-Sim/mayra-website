@@ -19,13 +19,13 @@ export default function Button(props:any){
     }
     if (props.type == "secondary") {
         return (
-            <button style={arguementStyle} className="custom-secondary-button">
+            <button style={arguementStyle} className={`${props.className} custom-secondary-button`}>
                 <Link href={`/${slug}`}>{name}</Link>
             </button>
         )
     }else{
         return (
-            <button style={arguementStyle} className="custom-primary-button">
+            <button style={arguementStyle} className={`${props.className} custom-primary-button`}>
                 <Link href={`/${slug}`}>{name}</Link>
             </button>
         )

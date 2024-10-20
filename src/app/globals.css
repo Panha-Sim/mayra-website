@@ -51,3 +51,28 @@ a {
   text-decoration: none !important;
   color:inherit !important;
 }
+
+input,
+textarea
+{
+  padding-left: 10px;
+  outline: 0;
+  border: 1px solid var(--color-body-dark);
+  border-radius: 0;
+
+  min-height: 25px;
+  max-height: 120px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px var(--color-body-light);
+  border: 1px solid var(--color-heading-dark);
+}
+
+

@@ -1,0 +1,155 @@
+.gradient-nav { 
+    background-image: linear-gradient(to right, #0A111B, #132A38);
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.contact-info {
+    display: flex;
+    width: 500px;
+    height: 450px;
+
+    padding: 30px;
+
+    background-image: linear-gradient(#122836, #0A121D);
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    gap: 40px;
+    flex: 1 1 100%;
+
+    padding: 35px;
+    border: 1px solid white;
+    border-radius:8px;
+}
+
+.info-card {
+    display: none;
+}
+
+.info-card .address {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.info-card h4,
+.info-card p
+{
+    margin:0 0;
+}
+
+.address-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.brief-description .text-body-light {
+    margin: 0 0;
+}
+
+.info-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-image-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-text-container {
+    text-align: end;
+}
+
+.footer-text-container p,
+.footer-text-container h4,
+.info-card h4 
+{
+    margin: 0 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    /* padding: 35px; */
+
+    /* border: 1px solid black; */
+    width: 350px;
+    height: 650px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 44px;
+    width: 100%;
+}
+.form-button:hover {
+    color:var(--color-body-light);
+    background-color: #0A121D !important;
+}
+
+.row-input {
+    display: flex;
+    flex-direction: column;
+}
+.row-input .input-name {
+    width: 100%;
+}
+
+.d-flex.flex-column {
+    margin-bottom: 12px;
+}
+
+.message-input {
+    height: 120px;
+}
+
+@media screen and (min-width: 768px) {
+    .info-card {
+        display: block;
+    }
+
+    .contact-info {
+        height: 650px;
+    }
+    .contact-form {
+        padding: 35px;
+        width: 500px;
+    }
+
+    .row-input {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .info-card {
+        display: block;
+    }
+}
