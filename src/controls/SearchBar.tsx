@@ -1,18 +1,7 @@
-
-'use client'
-
 import "@/styles/SearchBar.css"
-import { useState } from "react"
 import Button from "./Button";
 
 export default function SearchBar(props:any){
-
-    const [query, setQuery] = useState("");
-
-    const handleInputChange= (event:any) => {
-        setQuery(event.target.value)
-        console.log(event.target.value);
-    }
 
     return(
         <>
@@ -21,7 +10,7 @@ export default function SearchBar(props:any){
             type="text"
             className="search-input"
             placeholder={"Search Properties"}
-            onChange={handleInputChange}
+            onChange={props.onChange}
             />
 
             <Button type="primary"
