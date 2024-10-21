@@ -14,8 +14,19 @@ export default function PropertiesListing() {
 
     const handleInputChange= (event:any) => {
         setQuery(event.target.value)
-        console.log(event.target.value);
     }
+
+    const filteredHouses = houseList.houses.filter((house) => {
+        const searchQuery = query.toLowerCase()
+        return (
+            house.community.toLowerCase().includes(searchQuery) ||
+            house.address.toLowerCase().includes(searchQuery) ||
+            house.price.toString().includes(searchQuery) ||
+            house.beds.toString().includes(searchQuery) ||
+            house.baths.toString().includes(searchQuery) ||
+            house.sqft.toString().includes(searchQuery)
+        )
+    })
 
     return (
         <>
@@ -28,7 +39,7 @@ export default function PropertiesListing() {
         <section className="mb-5 container property-card-container">
 
            {
-            houseList.houses.map((house, key) => {
+            filteredHouses.map((house, key) => {
                 console.log(key);
                 return(
                     <PropertyCard

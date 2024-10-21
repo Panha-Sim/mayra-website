@@ -17,9 +17,9 @@ export default function PropertiesCard(props: any) {
                 </div>
 
                 <div className="estate-badge-container">
-                    <EstateBade type="bed" num ={` ${props.beds} beds `}/>
-                    <EstateBade type="bath" num ={` ${props.baths} Baths `}/>
-                    <EstateBade type="sqft" num ={` ${props.sqft} sqft `}/>
+                    <EstateBade type="bed" num ={` ${props.beds} `}/>
+                    <EstateBade type="bath" num ={` ${props.baths} `}/>
+                    <EstateBade type="sqft" num ={` ${props.sqft} `}/>
                 </div>
             </div>
 
