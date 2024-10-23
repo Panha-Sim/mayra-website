@@ -75,4 +75,6 @@ input:focus {
   border: 1px solid var(--color-heading-dark);
 }
 
-
+.border-red {
+  border-color: red;
+}

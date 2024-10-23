@@ -21,16 +21,44 @@ export default function Contact() {
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
     const [isAgree, setIsAgree] = useState(false);
+    const [errors, setErrors] = useState<any>({});
     const form = useRef();
 
+    // Validate the input
+    const validateForm = () => {
+        const newErrors: any = {};
+        if (!firstName) newErrors.firstName = "First name is required";
+        if (!lastName) newErrors.lastName = "Last name is required";
+        if (!email) {
+            newErrors.email = "Email is required";
+        } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+            newErrors.email = "Email is not valid";
+        }
+        if (!phoneNumber) newErrors.phoneNumber = "Phone number is required";
+        if (!subject) newErrors.subject = "Subject is required";
+        if (!message) newErrors.message = "Message is required";
+        if (!isAgree) newErrors.isAgree = "You must agree to the privacy policy";
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    // Form Submit Logic
     const handleSubmit = (e: any) => {
         e.preventDefault();
+
+        // Check if form is valid 
+        if (!validateForm()) {
+            return; 
+        }
         
+        // Check if user checked the agree to the privacy policy or not.
         if (!isAgree) {
             console.log("please checked the box")
             return;
         }
 
+        // Call email js api with the form input as a payload.
         emailjs
         .sendForm('service_tjrdx9h', 'template_sj0v3wp', form.current, {
           publicKey: '_jjptQar7EEc8CMNI',
@@ -106,38 +134,49 @@ export default function Contact() {
                         <div className="row-input">
                             <div className="input-name d-flex flex-column">
                                 <label>FIRST NAME:</label>
-                                <input type="firstName" name="firstName" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)}></input>
+                                <input className= {errors.firstName ? `border-red`: ""} type="firstName" name="firstName" placeholder="First Name" value={firstName} onChange={e => setFirstName(e.target.value)}></input>
+                                {errors.firstName && <p className="error">{errors.firstName}</p>}
                             </div>
                             <div className=" input-name d-flex flex-column">
                                 <label>LAST NAME:</label>
-                                <input type="lastName" name="lastName" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)}></input>
+                                <input className= {errors.lastName ? `border-red`: ""} type="lastName" name="lastName" placeholder="Last Name" value={lastName} onChange={e => setLastName(e.target.value)}></input>
+                                {errors.lastName && <p className="error">{errors.lastName}</p>}
                             </div>
                         </div>
-                        
+
                         <div className="d-flex flex-column">
                             <label>EMAIL:</label>
-                            <input type="text" name="email" placeholder="you@email.com" value={email} onChange={e => setEmail(e.target.value)}></input>
+                            <input className= {errors.email ? `border-red`: ""} type="text" name="email" placeholder="you@email.com" value={email} onChange={e => setEmail(e.target.value)}></input>
+                            {errors.email && <p className="error"> {errors.email} </p>}
                         </div>
 
                         <div className="d-flex flex-column">
                             <label>PHONE NUMBER:</label>
-                            <input type="number" name="phoneNumber" placeholder="+1 (555) 000-0000" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}></input>
+                            <input className= {errors.phoneNumber ? `border-red`: ""} type="number" name="phoneNumber" placeholder="+1 (555) 000-0000" value={phoneNumber} onChange={e => setPhoneNumber(e.target.value)}></input>
+                            {errors.phoneNumber && <p className="error"> {errors.phoneNumber} </p>}
                         </div>
 
-                        <div className="d-flex flex-column">
+                        <div className=" d-flex flex-column">
                             <label>SUBJECT:</label>
-                            <input type="text" name="subject" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)}></input>
+                            <input className= {errors.subject ? `border-red`: ""} type="text" name="subject" placeholder="Subject" value={subject} onChange={e => setSubject(e.target.value)}></input>
+                            {errors.subject && <p className="error">{errors.subject}</p>}
                         </div>
 
                         <div className="d-flex flex-column">
                             <label>Message:</label>
-                            <textarea className="message-input" name="message" placeholder="Leave me a message..." value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                            <textarea className={`message-input ${errors.subject ? `border-red`: ""}`} name="message" placeholder="Leave me a message..." value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                            {errors.message && <p className="error"> {errors.message} </p>}
                         </div>
 
-                        <div className="d-flex align-items-center">
-                            <input type="checkbox" onChange={e => setIsAgree(e.target.checked)}/>
-                            <label className="mx-2">You agree to my <a href="/privacy-policy">privacy policy</a></label>
+
+                        <div className="privacy-policy-checkbox">
+                            <div className="d-flex align-items-center">
+                                <input type="checkbox" onChange={e => setIsAgree(e.target.checked)}/>
+                                <label className="mx-2">You agree to my <a href="/privacy-policy">privacy policy</a></label>
+                            </div>
+                            {errors.isAgree && <p className="error"> {errors.isAgree} </p>}
                         </div>
+
                     </div>
                     <Button className="form-button" type="submit" bgColor="#132836" name="Send Message"/>
                 </form>

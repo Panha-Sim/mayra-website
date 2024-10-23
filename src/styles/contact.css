@@ -89,7 +89,7 @@
 
     /* border: 1px solid black; */
     width: 350px;
-    height: 650px;
+    min-height: 650px;
 }
 
 form {
@@ -124,6 +124,10 @@ form {
     margin-bottom: 12px;
 }
 
+.privacy-policy-checkbox {
+    margin-bottom: 12px;
+}
+
 .message-input {
     height: 120px;
 }
@@ -140,13 +144,19 @@ label a {
     color: #007bc7 !important;
 }
 
+.error {
+    color: red;
+    margin: 0 0;
+}
+
 @media screen and (min-width: 768px) {
     .info-card {
         display: block;
     }
 
     .contact-info {
-        height: 650px;
+        min-height: 650px;
+        height:auto;
     }
     .contact-form {
         padding: 35px;
