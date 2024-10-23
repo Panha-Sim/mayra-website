@@ -22,6 +22,7 @@ export default function Contact() {
     const [message, setMessage] = useState("");
     const [isAgree, setIsAgree] = useState(false);
     const [errors, setErrors] = useState<any>({});
+    const [IsSubmitted, setIsSubmitted] = useState(false);
     const form = useRef();
 
     // Validate the input
@@ -66,6 +67,16 @@ export default function Contact() {
         .then(
           () => {
             console.log('SUCCESS!');
+            setIsSubmitted(true);
+
+            // Clear the field
+            setFirstName("");
+            setLastName("");
+            setEmail("");
+            setPhoneNumber("");
+            setSubject("");
+            setMessage("");
+            setIsAgree(false);
           },
           (error) => {
             console.log('FAILED...', error.text);
@@ -79,6 +90,9 @@ export default function Contact() {
         <section className="gradient-nav">
             <Nav/>
         </section>
+        <div className="mt-5 d-flex justify-content-center container">
+            {IsSubmitted && <div className="success-card">Thank you! Your message has been received. I will get back to you shortly.</div>}
+        </div>
         <div className="contact-container">
 
             <div className="contact-info">
@@ -168,10 +182,9 @@ export default function Contact() {
                             {errors.message && <p className="error"> {errors.message} </p>}
                         </div>
 
-
                         <div className="privacy-policy-checkbox">
                             <div className="d-flex align-items-center">
-                                <input type="checkbox" onChange={e => setIsAgree(e.target.checked)}/>
+                                <input type="checkbox" onChange={e => setIsAgree(e.target.checked)} checked = {isAgree}/>
                                 <label className="mx-2">You agree to my <a href="/privacy-policy">privacy policy</a></label>
                             </div>
                             {errors.isAgree && <p className="error"> {errors.isAgree} </p>}
