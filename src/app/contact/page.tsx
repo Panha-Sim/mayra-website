@@ -49,23 +49,23 @@ export default function Contact() {
         e.preventDefault();
 
         // Check if form is valid 
-        if (!validateForm()) {
-            return; 
-        }
+        // if (!validateForm()) {
+        //     return; 
+        // }
         
         // Check if user checked the agree to the privacy policy or not.
-        if (!isAgree) {
-            console.log("please checked the box")
-            return;
-        }
+        // if (!isAgree) {
+        //     console.log("please checked the box")
+        //     return;
+        // }
 
         // Call email js api with the form input as a payload.
-        emailjs
-        .sendForm('service_tjrdx9h', 'template_sj0v3wp', form.current, {
-          publicKey: '_jjptQar7EEc8CMNI',
-        })
-        .then(
-          () => {
+        // emailjs
+        // .sendForm('service_tjrdx9h', 'template_sj0v3wp', form.current, {
+        //   publicKey: '_jjptQar7EEc8CMNI',
+        // })
+        // .then(
+        //   () => {
             console.log('SUCCESS!');
             setIsSubmitted(true);
 
@@ -77,11 +77,11 @@ export default function Contact() {
             setSubject("");
             setMessage("");
             setIsAgree(false);
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
+        //   },
+        //   (error) => {
+        //     console.log('FAILED...', error.text);
+        //   },
+        // );
 
     }
 
@@ -142,8 +142,9 @@ export default function Contact() {
             </div>
 
             <div className="contact-form">
+                {IsSubmitted && <div className="success-card-mobile">Thank you! Your message has been received. I will get back to you shortly.</div>}
                 <form ref={form} onSubmit={handleSubmit} className="form">
-                    <h1>Let's Connect</h1>
+                <h1>Let's Connect</h1>
                     <div className="form-input">
                         <div className="row-input">
                             <div className="input-name d-flex flex-column">
