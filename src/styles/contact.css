@@ -128,6 +128,18 @@ form {
     height: 120px;
 }
 
+input[ type = checkbox ] {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin:0 0;
+}
+
+label a {
+    text-decoration: underline !important;
+    color: #007bc7 !important;
+}
+
 @media screen and (min-width: 768px) {
     .info-card {
         display: block;

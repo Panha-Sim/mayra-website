@@ -20,10 +20,16 @@ export default function Contact() {
     const [phoneNumber, setPhoneNumber] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+    const [isAgree, setIsAgree] = useState(false);
     const form = useRef();
 
     const handleSubmit = (e: any) => {
         e.preventDefault();
+        
+        if (!isAgree) {
+            console.log("please checked the box")
+            return;
+        }
 
         emailjs
         .sendForm('service_tjrdx9h', 'template_sj0v3wp', form.current, {
@@ -126,6 +132,11 @@ export default function Contact() {
                         <div className="d-flex flex-column">
                             <label>Message:</label>
                             <textarea className="message-input" name="message" placeholder="Leave me a message..." value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                        </div>
+
+                        <div className="d-flex align-items-center">
+                            <input type="checkbox" onChange={e => setIsAgree(e.target.checked)}/>
+                            <label className="mx-2">You agree to my <a href="/privacy-policy">privacy policy</a></label>
                         </div>
                     </div>
                     <Button className="form-button" type="submit" bgColor="#132836" name="Send Message"/>
