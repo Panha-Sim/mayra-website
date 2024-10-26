@@ -61,8 +61,8 @@ export default function Contact() {
 
         // Call email js api with the form input as a payload.
         emailjs
-        .sendForm('service_tjrdx9h', 'template_sj0v3wp', form.current, {
-          publicKey: '_jjptQar7EEc8CMNI',
+        .sendForm('service_u74k0r5', 'template_gkn9t6m', form.current, {
+          publicKey: 'brOOp_amL-a2ZRdDn',
         })
         .then(
           () => {
