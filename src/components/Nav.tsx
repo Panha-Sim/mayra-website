@@ -53,7 +53,7 @@ export default function Nav(){
                             <Link href="/about" role="menuitem">ABOUT</Link>
                         </li>
                         <li role="none">
-                            <Link href="/contact" role="menuitem">LET'S CONNECT</Link>
+                            <Link href="/contact" role="menuitem">LET&apos;S CONNECT</Link>
                         </li>
                     </ul>
                 </nav>

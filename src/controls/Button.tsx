@@ -5,10 +5,6 @@ export default function Button(props:any){
 
     const slug = props.slug;
     const name = props.name;
-    const color = props.color;
-    const border = props.border;
-    const borderColor = props.borderColor;
-    const bgColor = props.bgColor;
 
     const arguementStyle = {
         "color": props.color,

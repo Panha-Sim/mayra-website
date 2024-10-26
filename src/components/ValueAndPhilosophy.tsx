@@ -21,7 +21,7 @@ export default function ValueAndPhilosophy(){
 
                     <div className="tenacity-honesty-card">
                         <h1>HONESTY</h1>
-                        <p>In every transaction and interaction, I prioritize honesty and transparency. Real estate decisions are among the most significant in a person's life, and I am dedicated to ensuring that my clients feel fully informed and confident in their choices. I strive to build lasting relationships based on mutual trust.</p>
+                        <p>In every transaction and interaction, I prioritize honesty and transparency. Real estate decisions are among the most significant in a person&apos;s life, and I am dedicated to ensuring that my clients feel fully informed and confident in their choices. I strive to build lasting relationships based on mutual trust.</p>
                     </div>
 
                 </div>

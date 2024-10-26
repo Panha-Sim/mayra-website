@@ -23,7 +23,7 @@ export default function Contact() {
     const [isAgree, setIsAgree] = useState(false);
     const [errors, setErrors] = useState<any>({});
     const [IsSubmitted, setIsSubmitted] = useState(false);
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
 
     // Validate the input
     const validateForm = () => {
@@ -56,6 +56,10 @@ export default function Contact() {
         // Check if user checked the agree to the privacy policy or not.
         if (!isAgree) {
             console.log("please checked the box")
+            return;
+        }
+
+        if (!form.current) {
             return;
         }
 
@@ -120,7 +124,7 @@ export default function Contact() {
                         </div>
                     </div>
                     <div className="brief-description">
-                        <p className="text-body-light">I'm here to assist you directly with your real estate needs! Whether you're buying, selling, or relocating, I offer personalized guidance every step of the way. Fill out the form below, and I'll be in touch to help you achieve your goals. Let's get started!</p>
+                        <p className="text-body-light">I&apos;m here to assist you directly with your real estate needs! Whether you&apos;re buying, selling, or relocating, I offer personalized guidance every step of the way. Fill out the form below, and I&apos;ll be in touch to help you achieve your goals. Let&apos;s get started!</p>
                     </div>
                     <div className="info-footer">
                         <div className="footer-image-container">
@@ -144,7 +148,7 @@ export default function Contact() {
             <div className="contact-form">
                 {IsSubmitted && <div className="success-card-mobile">Thank you! Your message has been received. I will get back to you shortly.</div>}
                 <form ref={form} onSubmit={handleSubmit} className="form">
-                <h1>Let's Connect</h1>
+                <h1>Let&apos;s Connect</h1>
                     <div className="form-input">
                         <div className="row-input">
                             <div className="input-name d-flex flex-column">
