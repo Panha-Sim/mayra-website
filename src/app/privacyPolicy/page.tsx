@@ -1,6 +1,6 @@
 
 import Nav from "@/components/Nav"
-import "@/styles/privacyPolicy.css"
+import "@/styles/policy.css"
 
 export default function PrivacyPolicy() {
     return (
