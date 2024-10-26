@@ -44,6 +44,16 @@
             "beds": "4 beds",
             "baths": "2 Baths", 
             "sqft": "2,207 sqft"
+        },
+        {
+            "image":"/5713 N 71ST AVE.jpg",
+            "price": "$350,000",
+            "community": "SKYVIEW WEST UNIT 1",
+            "address": "5713 N 71ST AVE, Glendale, AZ 85303",
+            "beds": "3 beds",
+            "baths": "2 Baths", 
+            "sqft": "1,224 sqft"
+
         }
     ]
 }

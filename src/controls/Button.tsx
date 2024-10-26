@@ -1,5 +1,4 @@
 import "@/styles/button.css"
-import { cookies } from "next/headers";
 import Link from 'next/link'
 
 export default function Button(props:any){

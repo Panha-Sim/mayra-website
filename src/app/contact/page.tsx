@@ -90,7 +90,7 @@ export default function Contact() {
         <section className="gradient-nav">
             <Nav/>
         </section>
-        <div className="mt-5 d-flex justify-content-center container">
+        <div className="d-flex justify-content-center container success-message">
             {IsSubmitted && <div className="success-card">Thank you! Your message has been received. I will get back to you shortly.</div>}
         </div>
         <div className="contact-container">
@@ -186,7 +186,7 @@ export default function Contact() {
                         <div className="privacy-policy-checkbox">
                             <div className="d-flex align-items-center">
                                 <input type="checkbox" onChange={e => setIsAgree(e.target.checked)} checked = {isAgree}/>
-                                <label className="mx-2">You agree to my <a href="/privacy-policy">privacy policy</a></label>
+                                <label className="mx-2">You agree to my <a href="/privacyPolicy">privacy policy</a></label>
                             </div>
                             {errors.isAgree && <p className="error"> {errors.isAgree} </p>}
                         </div>

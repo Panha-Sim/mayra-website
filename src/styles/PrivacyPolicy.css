@@ -1,0 +1,16 @@
+.gradient-nav { 
+    background-image: linear-gradient(to right, #0A111B, #132A38);
+}
+.container .privacy-policy-title {
+    font-size: 50px !important;
+}
+
+.privacy-policy-title-container {
+    text-align: center;
+}
+
+@media screen and (min-width: 576px) {
+    .container .privacy-policy-title {
+        font-size: 65px !important;
+    } 
+}

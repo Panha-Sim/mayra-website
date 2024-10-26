@@ -2,11 +2,15 @@
     background-image: linear-gradient(to right, #0A111B, #132A38);
 }
 
+.success-message {
+    margin-top: 0rem;
+}
+
 .contact-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 0pc;
 }
 
 .contact-info {
@@ -86,6 +90,7 @@
     justify-content: space-between;
 
     padding-top: 35px;
+    margin-bottom: 100px;
 
     /* border: 1px solid black; */
     width: 350px;
@@ -168,6 +173,14 @@ label a {
 @media screen and (min-width: 768px) {
     .info-card {
         display: block;
+    }
+
+    .success-message {
+        margin-top: 3rem;
+    }
+
+    .contact-container {
+        margin-top: 100px;
     }
 
     .contact-info {

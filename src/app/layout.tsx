@@ -4,11 +4,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Expert Real Estate Guidance in Phoenix & Goodyear | Mayra Messer',
-  description: 'Expert Real Estate Guidance in Phoenix and Goodyear—Bilingual Support, Home Buying and Selling, with Local Insight and a Personal Touch in Every Real Estate Journey.',
-  keywords: 'Phoenix real estate, Goodyear real estate, home buying Phoenix, home buying Goodyear, bilingual real estate agent, local Phoenix real estate guidance, local Goodyear real estate guidance',
+  title: 'Bilingual Real Estate Expert in Phoenix, Goodyear, Laveen, Peoria, Avondale, Tolleson | Mayra Messer',
+  description: 'Discover expert real estate services with Mayra Messer in Phoenix, Goodyear, Laveen, Peoria, Avondale, and Tolleson. Bilingual support for home buying and selling, providing local insights and a personalized touch in every real estate transaction.',
+  keywords: 'Phoenix real estate, Goodyear real estate, Laveen real estate, Peoria real estate, Avondale real estate, Tolleson real estate, home buying Phoenix, home buying Goodyear, bilingual real estate agent, Phoenix home selling, Goodyear home selling, local real estate guidance, Mayra Messer real estate',
 }
-
 
 export default function RootLayout({
   children,
