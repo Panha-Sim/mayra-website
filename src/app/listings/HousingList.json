@@ -1,8 +1,26 @@
 {
     "houses": [
         {
+            "image":"/6725 W CYPRESS ST, Phoenix, AZ 85035.jpg",
+            "price": "$330,000 (Sold)",
+            "community": "Skyview North",
+            "address": "6725 W CYPRESS ST, Phoenix, AZ 85035",
+            "beds": "2 beds",
+            "baths": " 1 Baths", 
+            "sqft": "840 sqft"
+        },
+        {
+            "image":"/5747 W Missouri Ave 8, Glendale, AZ 85301.jpg",
+            "price": "$57,000 (Sold)",
+            "community": "Cascade Mobile Home",
+            "address": "5747 W Missouri AVE 8, Glendale, AZ 85301",
+            "beds": "3 beds",
+            "baths": " 2 Baths", 
+            "sqft": "1,440 sqft"
+        },
+        {
             "image":"/10236 w patrick ln peopria.png",
-            "price": "$716,500",
+            "price": "$716,500 (Sold)",
             "community": "Sunset Ranch Community",
             "address": "10236 W PATRICK LN, PEORIA, AZ 85383",
             "beds": "3 beds",
@@ -11,7 +29,7 @@
         },
         {
             "image":"/4107 W READE AVE, PHOENIX, AZ 85019.jpg",
-            "price": "$200,000",
+            "price": "$200,000 (Sold)",
             "community": "Hallcraft Villas West",
             "address": "4107 W READE AVE, PHOENIX, AZ 85019",
             "beds": "3 beds",
@@ -20,7 +38,7 @@
         },
         {
             "image":"/6714 W DARREL RD, Laveen, AZ 85339.jpg",
-            "price": "$530,000",
+            "price": "$530,000 (Sold)",
             "community": "Laveen Farms Phase 1",
             "address": "6714 W DARREL RD, Laveen, AZ 85339",
             "beds": "5 beds",
@@ -29,7 +47,7 @@
         },
         {
             "image":"/11591 W HUBBELL ST, Avondale, AZ 85392.jpg",
-            "price": "$530,000",
+            "price": "$530,000 (Sold)",
             "community": "Palm Gardens",
             "address": "11591 W HUBBELL ST, Avondale, AZ 85392",
             "beds": "3 beds",
@@ -38,7 +56,7 @@
         },
         {
             "image":"/8314 W GROSS AVE, Tolleson, AZ 85353.jpg",
-            "price": "$262,500",
+            "price": "$262,500 (Sold)",
             "community": "Ryland at Heritage Point",
             "address": "8314 W GROSS AVE, Tolleson, AZ 85353",
             "beds": "4 beds",
@@ -47,7 +65,7 @@
         },
         {
             "image":"/5713 N 71ST AVE.jpg",
-            "price": "$350,000",
+            "price": "$350,000 (Sold)",
             "community": "SKYVIEW WEST UNIT 1",
             "address": "5713 N 71ST AVE, Glendale, AZ 85303",
             "beds": "3 beds",
